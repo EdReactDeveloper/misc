@@ -1,0 +1,31 @@
+
+.wrapper{
+  width: 180px; 
+  height: 180px; 
+  background: black;
+  position: relative;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.wrapper::after{ 
+  content: ''; 
+  background:  #f8e34b; 
+  height: 90px; 
+  width: 100%;
+  position: absolute; 
+  left: 0;
+  top: 0; 
+}
+
+.wrapper::before{ 
+  content: '';
+    background: #eeedef;
+    height: 95px;
+    width: 90px;
+    position: absolute;
+    right: 50%;
+    top: 49%;
+    box-shadow: inset 0 5px 5px #c8c8c8;
+    transform: skewY(178deg); 
+}
